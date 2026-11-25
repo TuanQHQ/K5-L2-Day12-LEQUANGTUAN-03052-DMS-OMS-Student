@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+D04,real_IR,"Vùng mắt cả hai bên không thấy khe mắt trong khi tài xế đeo kính trong (glasses=clear)","eye_left, eye_right, 8 điểm face13 của mắt","Ghi eye_left/eye_right = unknown (không ghi closed); 8 điểm mắt bật occluded"
+D06,real_IR,"Mắt trái không thấy rõ khi tài xế nhìn sang gương trái (gaze_zone=mirror_l)","eye_left, 4 điểm left_eye_* của face13","eye_left = unknown; 4 điểm left_eye_* bật outside, không đặt điểm cho đủ"
+D02,real_IR,"Dây an toàn không xác định được rõ ràng trên khung NIR","seatbelt","Giữ seatbelt = unknown, không đoán worn_incorrect"
+D03,real_IR,"Vùng miệng/môi không xác định được vị trí điểm","mouth_left, mouth_right, lip_upper, lip_lower (face13)","4 điểm miệng bật outside; không đặt điểm cho đủ 13"
+S08_ir,IR_sim,"Mặt rộng chỉ khoảng 69 px nên không phân biệt được mắt và kính; ảnh RGB cùng cảnh (71 px) cũng vậy","eye_left, eye_right, glasses, gaze_zone","Ghi unknown (gaze_zone = other); không vẽ face13 vì mặt dưới 60 px không đủ điều kiện và SVIRO chỉ có box face"
+S02_ir,IR_sim,"Hai ảnh RGB và IR-sim cùng thấy người ngồi nhưng không có dây an toàn trên SVIRO","seatbelt","person.seatbelt = not_worn ở cả RGB và IR-sim; không ghi worn_correct"
